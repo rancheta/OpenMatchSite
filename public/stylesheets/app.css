@@ -125,12 +125,12 @@
 }
 /* line 100, ../scss/_home.scss */
 .person .short {
-  font-size: 12px;
+  font-size: 14px;
   font-style: italic;
 }
 /* line 104, ../scss/_home.scss */
 .person .long {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* line 109, ../scss/_home.scss */
@@ -146,13 +146,13 @@
 }
 /* line 117, ../scss/_home.scss */
 .locations h4 {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
 /* line 122, ../scss/_home.scss */
 .locations p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* line 127, ../scss/_home.scss */

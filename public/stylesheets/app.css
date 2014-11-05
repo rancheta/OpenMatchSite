@@ -53,10 +53,10 @@
 
 /* line 34, ../scss/_home.scss */
 .bannerImg {
-  background-image: url("https://unsplash.imgix.net/reserve/tlC8KhNJR0CA2xdomLfx_DSC_0358-2.jpg?q=75&fm=jpg&s=c5c66c8958c2c6ddced808e608302fe7");
+  background-image: url("../images/home.jpg");
   height: 400px;
   background-size: 100%;
-  background-position: middle;
+  background-position: bottom;
 }
 
 /* line 41, ../scss/_home.scss */
@@ -85,12 +85,11 @@
 }
 /* line 64, ../scss/_home.scss */
 .cities img {
-  height: 100px;
   width: 100%;
   background-color: #ccc;
   margin: 20px 0px 15px 0px;
 }
-/* line 70, ../scss/_home.scss */
+/* line 69, ../scss/_home.scss */
 .cities button {
   width: 100%;
   padding: 5px;
@@ -100,74 +99,74 @@
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 78, ../scss/_home.scss */
+/* line 77, ../scss/_home.scss */
 .cities button:hover {
   background-color: #c0be33;
   border: solid 1px #c0be33;
 }
 
-/* line 85, ../scss/_home.scss */
+/* line 84, ../scss/_home.scss */
 .darkRow {
   padding: 30px 0 30px 0;
   background-color: #3d3d3d;
   color: white;
 }
-/* line 89, ../scss/_home.scss */
+/* line 88, ../scss/_home.scss */
 .darkRow p {
   font-size: 14px;
   line-height: 1.2;
 }
 
-/* line 96, ../scss/_home.scss */
+/* line 95, ../scss/_home.scss */
 .person .name {
   font-size: 16px;
   margin-top: -3px;
 }
-/* line 100, ../scss/_home.scss */
+/* line 99, ../scss/_home.scss */
 .person .short {
   font-size: 14px;
   font-style: italic;
 }
-/* line 104, ../scss/_home.scss */
+/* line 103, ../scss/_home.scss */
 .person .long {
   font-size: 14px;
 }
 
-/* line 109, ../scss/_home.scss */
+/* line 108, ../scss/_home.scss */
 .coloredRow {
   background-color: #68682c;
   padding: 40px 0px 40px 0px;
 }
 
-/* line 114, ../scss/_home.scss */
+/* line 113, ../scss/_home.scss */
 .locations {
   color: white;
   padding-top: 20px;
 }
-/* line 117, ../scss/_home.scss */
+/* line 116, ../scss/_home.scss */
 .locations h4 {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 122, ../scss/_home.scss */
+/* line 121, ../scss/_home.scss */
 .locations p {
   font-size: 14px;
 }
 
-/* line 127, ../scss/_home.scss */
+/* line 126, ../scss/_home.scss */
 .footer {
   background-color: #c0be33;
   padding: 20px;
 }
-/* line 130, ../scss/_home.scss */
+/* line 129, ../scss/_home.scss */
 .footer ul {
   list-style: none;
   font-color: #fff;
   width: 80%;
   margin: 0 auto;
 }
-/* line 135, ../scss/_home.scss */
+/* line 134, ../scss/_home.scss */
 .footer ul li {
   color: #848484;
   float: left;
@@ -176,7 +175,7 @@
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 142, ../scss/_home.scss */
+/* line 141, ../scss/_home.scss */
 .footer ul li span {
   color: white;
 }

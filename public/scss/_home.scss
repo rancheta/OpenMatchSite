@@ -32,10 +32,10 @@
 }
 
 .bannerImg{
-	background-image: url('https://unsplash.imgix.net/reserve/tlC8KhNJR0CA2xdomLfx_DSC_0358-2.jpg?q=75&fm=jpg&s=c5c66c8958c2c6ddced808e608302fe7');
+	background-image: url('../images/home.jpg');
 	height:400px;
 	background-size: 100%;
-	background-position: middle;
+	background-position: bottom;
 }
 
 .mission{
@@ -62,7 +62,6 @@
 		font-size:18px;
 	}
 	img{
-		height:100px;
 		width:100%;
 		background-color:#ccc;
 		margin:20px 0px 15px 0px;

@@ -44,22 +44,27 @@
   font-size: 12px;
   font-weight: bold;
   padding: 10px;
+  padding-bottom: 2px;
   text-transform: uppercase;
 }
-/* line 26, ../scss/_home.scss */
+/* line 27, ../scss/_home.scss */
+.topbar .nav ul li:hover {
+  border-bottom: solid 3px #c0be33;
+}
+/* line 30, ../scss/_home.scss */
 .topbar .nav ul li span {
   color: white;
 }
 
-/* line 34, ../scss/_home.scss */
+/* line 38, ../scss/_home.scss */
 .bannerImg {
   background-image: url("../images/home.jpg");
-  height: 400px;
+  height: 500px;
   background-size: 100%;
   background-position: bottom;
 }
 
-/* line 41, ../scss/_home.scss */
+/* line 45, ../scss/_home.scss */
 .mission {
   width: 80%;
   margin: 0 auto;
@@ -67,29 +72,29 @@
   margin-top: -150px;
   padding: 30px 20px 30px 20px;
 }
-/* line 48, ../scss/_home.scss */
+/* line 52, ../scss/_home.scss */
 .mission .kpi h5 {
   font-size: 16px;
   text-transform: uppercase;
 }
-/* line 52, ../scss/_home.scss */
+/* line 56, ../scss/_home.scss */
 .mission .kpi p {
   line-height: 1;
   font-size: 14px;
 }
 
-/* line 60, ../scss/_home.scss */
+/* line 64, ../scss/_home.scss */
 .cities h5 {
   text-transform: uppercase;
   font-size: 18px;
 }
-/* line 64, ../scss/_home.scss */
+/* line 68, ../scss/_home.scss */
 .cities img {
   width: 100%;
   background-color: #ccc;
   margin: 20px 0px 15px 0px;
 }
-/* line 69, ../scss/_home.scss */
+/* line 73, ../scss/_home.scss */
 .cities button {
   width: 100%;
   padding: 5px;
@@ -99,74 +104,74 @@
   text-transform: uppercase;
   font-size: 12px;
 }
-/* line 77, ../scss/_home.scss */
+/* line 81, ../scss/_home.scss */
 .cities button:hover {
   background-color: #c0be33;
   border: solid 1px #c0be33;
 }
 
-/* line 84, ../scss/_home.scss */
+/* line 88, ../scss/_home.scss */
 .darkRow {
   padding: 30px 0 30px 0;
   background-color: #3d3d3d;
   color: white;
 }
-/* line 88, ../scss/_home.scss */
+/* line 92, ../scss/_home.scss */
 .darkRow p {
   font-size: 14px;
   line-height: 1.2;
 }
 
-/* line 95, ../scss/_home.scss */
+/* line 99, ../scss/_home.scss */
 .person .name {
   font-size: 16px;
   margin-top: -3px;
 }
-/* line 99, ../scss/_home.scss */
+/* line 103, ../scss/_home.scss */
 .person .short {
   font-size: 14px;
   font-style: italic;
 }
-/* line 103, ../scss/_home.scss */
+/* line 107, ../scss/_home.scss */
 .person .long {
   font-size: 14px;
 }
 
-/* line 108, ../scss/_home.scss */
+/* line 112, ../scss/_home.scss */
 .coloredRow {
   background-color: #68682c;
   padding: 40px 0px 40px 0px;
 }
 
-/* line 113, ../scss/_home.scss */
+/* line 117, ../scss/_home.scss */
 .locations {
   color: white;
   padding-top: 20px;
 }
-/* line 116, ../scss/_home.scss */
+/* line 120, ../scss/_home.scss */
 .locations h4 {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 121, ../scss/_home.scss */
+/* line 125, ../scss/_home.scss */
 .locations p {
   font-size: 14px;
 }
 
-/* line 126, ../scss/_home.scss */
+/* line 130, ../scss/_home.scss */
 .footer {
   background-color: #c0be33;
   padding: 20px;
 }
-/* line 129, ../scss/_home.scss */
+/* line 133, ../scss/_home.scss */
 .footer ul {
   list-style: none;
   font-color: #fff;
-  width: 80%;
+  width: 391px;
   margin: 0 auto;
 }
-/* line 134, ../scss/_home.scss */
+/* line 138, ../scss/_home.scss */
 .footer ul li {
   color: #848484;
   float: left;
@@ -175,49 +180,55 @@
   padding: 10px;
   text-transform: uppercase;
 }
-/* line 141, ../scss/_home.scss */
+/* line 145, ../scss/_home.scss */
 .footer ul li span {
   color: white;
 }
 
 /* line 1, ../scss/_util.scss */
+p {
+  line-height: 19px !important;
+  font-size: 15px !important;
+}
+
+/* line 6, ../scss/_util.scss */
 .row {
   padding-left: 100px;
   padding-right: 100px;
 }
 
-/* line 6, ../scss/_util.scss */
+/* line 11, ../scss/_util.scss */
 .smallTitle {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
+  letter-spacing: .05em;
 }
 
-/* line 12, ../scss/_util.scss */
+/* line 18, ../scss/_util.scss */
 .smallDescription {
-  font-size: 22px;
-  font-style: italic;
+  font-size: 21px;
   width: 840px;
   margin: 0 auto;
 }
 
-/* line 19, ../scss/_util.scss */
+/* line 24, ../scss/_util.scss */
 .narrow {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 24, ../scss/_util.scss */
+/* line 29, ../scss/_util.scss */
 .center {
   text-align: center;
 }
 
-/* line 28, ../scss/_util.scss */
+/* line 33, ../scss/_util.scss */
 .white {
   color: white !important;
 }
 
-/* line 31, ../scss/_util.scss */
+/* line 36, ../scss/_util.scss */
 .noPadding {
   padding-right: 0px !important;
   padding-left: 0px !important;

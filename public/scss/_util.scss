@@ -1,3 +1,8 @@
+p{
+	line-height:19px !important;
+	font-size:15px !important;	
+}
+
 .row{
 	padding-left:100px;
 	padding-right:100px;
@@ -5,13 +10,13 @@
 
 .smallTitle{
 	text-transform: uppercase;
-	font-size:20px;
+	font-size:16px;
 	font-weight:bold;
+	letter-spacing: .05em;
 }
 
 .smallDescription{
-	font-size:22px;
-	font-style: italic;
+	font-size:21px;
 	width:840px;
 	margin: 0 auto;
 }

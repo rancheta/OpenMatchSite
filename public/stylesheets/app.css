@@ -103,12 +103,12 @@ header {
   /*margin-bottom:15px;*/
 }
 
-/* line 79, ../scss/_home.scss */
-.topNav {
-  padding-top: 18px;
+/* line 80, ../scss/_home.scss */
+.topNav a {
+  margin-bottom: 0px;
 }
 
-/* line 83, ../scss/_home.scss */
+/* line 85, ../scss/_home.scss */
 .topNav .button {
   padding: 10px;
   font-size: 18px;
@@ -117,37 +117,37 @@ header {
   font-variant: small-caps;
 }
 
-/* line 91, ../scss/_home.scss */
+/* line 93, ../scss/_home.scss */
 .logoClass a {
   color: #4fd164 !important;
   font-family: 'Titillium Web', sans-serif;
 }
 
-/* line 96, ../scss/_home.scss */
+/* line 98, ../scss/_home.scss */
 .logoClass a:hover {
   color: #4fd164 !important;
 }
 
 /*end header stylings*/
 /*benefits stylings*/
-/* line 104, ../scss/_home.scss */
+/* line 106, ../scss/_home.scss */
 .benefits-heading {
   text-align: center;
 }
 
-/* line 108, ../scss/_home.scss */
+/* line 110, ../scss/_home.scss */
 .benefitsRow i {
   font-size: 5em;
 }
 
-/* line 111, ../scss/_home.scss */
+/* line 113, ../scss/_home.scss */
 .benefitsRow {
   text-align: center;
 }
 
 /*end benefits stylings*/
 /*contact stylings*/
-/* line 120, ../scss/_home.scss */
+/* line 122, ../scss/_home.scss */
 .circlePicture {
   height: 200px;
   overflow: hidden;
@@ -157,7 +157,7 @@ header {
 
 /*end contact styling*/
 /*features styles*/
-/* line 131, ../scss/_home.scss */
+/* line 133, ../scss/_home.scss */
 .featuresButton {
   width: 100%;
   font-size: 14px;
@@ -168,7 +168,7 @@ header {
   border: solid 2px #333 !important;
 }
 
-/* line 141, ../scss/_home.scss */
+/* line 143, ../scss/_home.scss */
 .featuresButton:hover {
   color: #222;
   border-color: #444 !important;
@@ -176,31 +176,31 @@ header {
 }
 
 /*end features styles*/
-/* line 150, ../scss/_home.scss */
+/* line 152, ../scss/_home.scss */
 .mainContainer {
   margin: 0 15px 0 15px;
   box-shadow: 0px 0px 20px #ccc;
   border-top: solid 5px #4fd164;
 }
 
-/* line 156, ../scss/_home.scss */
+/* line 158, ../scss/_home.scss */
 a {
   color: #222 !important;
 }
 
-/* line 160, ../scss/_home.scss */
+/* line 162, ../scss/_home.scss */
 a:hover {
   color: #3B9D4B !important;
   text-decoration: none;
 }
 
-/* line 165, ../scss/_home.scss */
+/* line 167, ../scss/_home.scss */
 .green {
   background-color: #4fd164 !important;
 }
 
 /*video css*/
-/* line 171, ../scss/_home.scss */
+/* line 173, ../scss/_home.scss */
 video {
   width: 100%;
   z-index: -100;

@@ -10,194 +10,205 @@
   font-weight: bold;
   src: url("../stylesheets/Brandon_med.otf");
 }
-/* line 1, ../scss/_home.scss */
-.topbar {
-  background-color: #3d3d3d;
-}
+/*Util stylings*/
 /* line 3, ../scss/_home.scss */
-.topbar h3 {
-  color: #dddddd;
-}
-/* line 5, ../scss/_home.scss */
-.topbar h3 span {
-  color: #c0be33;
-}
-/* line 9, ../scss/_home.scss */
-.topbar img {
-  margin-top: 10px;
-}
-/* line 12, ../scss/_home.scss */
-.topbar .nav {
-  padding-top: 8px;
-}
-/* line 14, ../scss/_home.scss */
-.topbar .nav ul {
-  list-style: none;
-  font-color: #fff;
-  float: right;
-  margin-bottom: 5px;
-}
-/* line 19, ../scss/_home.scss */
-.topbar .nav ul li {
-  color: #848484;
-  float: left;
-  font-size: 12px;
-  font-weight: bold;
-  padding: 10px;
-  padding-bottom: 1px;
-  text-transform: uppercase;
-}
-/* line 27, ../scss/_home.scss */
-.topbar .nav ul li:hover {
-  border-bottom: solid 3px #c0be33;
-}
-/* line 30, ../scss/_home.scss */
-.topbar .nav ul li span {
-  color: white;
+.grey {
+  background-color: #efefef;
 }
 
-/* line 38, ../scss/_home.scss */
-.bannerImg {
-  background-image: url("../images/home.jpg");
-  height: 500px;
-  background-size: 100%;
-  background-position: bottom;
+/* line 7, ../scss/_home.scss */
+.noMargin {
+  margin: 0px;
 }
 
-/* line 45, ../scss/_home.scss */
-.mission {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #68682c;
-  margin-top: -150px;
-  padding: 30px 20px 30px 20px;
-}
-/* line 52, ../scss/_home.scss */
-.mission .kpi h5 {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-/* line 56, ../scss/_home.scss */
-.mission .kpi p {
-  line-height: 1;
+/* line 11, ../scss/_home.scss */
+.subText {
+  color: #555;
   font-size: 14px;
+}
+
+/* line 16, ../scss/_home.scss */
+.center {
+  text-align: center;
+}
+
+/* line 20, ../scss/_home.scss */
+.medium {
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+}
+
+/* line 25, ../scss/_home.scss */
+.sGrey {
+  color: #888;
+}
+
+/* line 29, ../scss/_home.scss */
+.getstarted {
+  border-radius: 10px !important;
+  width: 100%;
+  padding: 5px;
+  font-size: 25px !important;
+  font-weight: bold !important;
+}
+/* line 35, ../scss/_home.scss */
+.getstarted:hover {
+  color: white !important;
+  background-color: #2C993D !important;
+}
+
+/*end util stylings*/
+/*footer stylings*/
+/* line 44, ../scss/_home.scss */
+footer {
+  padding: 20px 5px;
+  background-color: #efefef;
+  opacity: .8;
+  margin-bottom: -17px;
+  margin-top: 60px;
+}
+
+/* line 52, ../scss/_home.scss */
+footer h5 {
+  font-size: 16px;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+/* line 57, ../scss/_home.scss */
+footer a {
+  color: #444;
+}
+
+/* line 60, ../scss/_home.scss */
+footer a:hover {
+  color: green;
 }
 
 /* line 64, ../scss/_home.scss */
-.cities h5 {
-  text-transform: uppercase;
-  font-size: 18px;
-}
-/* line 68, ../scss/_home.scss */
-.cities img {
-  width: 100%;
-  background-color: #ccc;
-  margin: 20px 0px 15px 0px;
-}
-/* line 73, ../scss/_home.scss */
-.cities button {
-  width: 100%;
-  padding: 5px;
-  background-color: #fff;
-  border: solid 1px #000;
-  color: black;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-/* line 81, ../scss/_home.scss */
-.cities button:hover {
-  background-color: #c0be33;
-  border: solid 1px #c0be33;
-}
-
-/* line 88, ../scss/_home.scss */
-.darkRow {
-  padding: 30px 0 30px 0;
-  background-color: #3d3d3d;
-  color: white;
-}
-/* line 92, ../scss/_home.scss */
-.darkRow p {
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-/* line 99, ../scss/_home.scss */
-.person .name {
-  font-size: 16px;
-  margin-top: -3px;
-}
-/* line 103, ../scss/_home.scss */
-.person .short {
-  font-size: 14px;
-  font-style: italic;
-}
-/* line 107, ../scss/_home.scss */
-.person .long {
-  font-size: 14px;
-}
-
-/* line 112, ../scss/_home.scss */
-.coloredRow {
-  background-color: #68682c;
-  padding: 40px 0px 40px 0px;
-}
-
-/* line 117, ../scss/_home.scss */
-.locations {
-  color: white;
-  padding-top: 20px;
-}
-/* line 120, ../scss/_home.scss */
-.locations h4 {
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-/* line 125, ../scss/_home.scss */
-.locations p {
-  font-size: 14px;
-}
-
-/* line 130, ../scss/_home.scss */
-.footer {
-  background-color: #c0be33;
-  padding: 20px;
-}
-/* line 133, ../scss/_home.scss */
-.footer ul {
+ul {
   list-style: none;
-  font-color: #fff;
-  width: 391px;
-  margin: 0 auto;
 }
-/* line 138, ../scss/_home.scss */
-.footer ul li {
-  color: #848484;
-  float: left;
-  font-size: 12px;
-  font-weight: bold;
+
+/* line 68, ../scss/_home.scss */
+ul li {
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+/*end footer stylings*/
+/*header stylings*/
+/* line 75, ../scss/_home.scss */
+header {
+  /*margin-bottom:15px;*/
+}
+
+/* line 79, ../scss/_home.scss */
+.topNav {
+  padding-top: 18px;
+}
+
+/* line 83, ../scss/_home.scss */
+.topNav .button {
   padding: 10px;
-  text-transform: uppercase;
+  font-size: 18px;
+  background-color: transparent !important;
+  font-weight: bold;
+  font-variant: small-caps;
 }
-/* line 145, ../scss/_home.scss */
-.footer ul li span {
-  color: white;
+
+/* line 91, ../scss/_home.scss */
+.logoClass a {
+  color: #4fd164 !important;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* line 96, ../scss/_home.scss */
+.logoClass a:hover {
+  color: #4fd164 !important;
+}
+
+/*end header stylings*/
+/*benefits stylings*/
+/* line 104, ../scss/_home.scss */
+.benefits-heading {
+  text-align: center;
+}
+
+/* line 108, ../scss/_home.scss */
+.benefitsRow i {
+  font-size: 5em;
+}
+
+/* line 111, ../scss/_home.scss */
+.benefitsRow {
+  text-align: center;
+}
+
+/*end benefits stylings*/
+/*contact stylings*/
+/* line 120, ../scss/_home.scss */
+.circlePicture {
+  height: 200px;
+  overflow: hidden;
+  border-radius: 100px;
+  margin-bottom: 30px;
+}
+
+/*end contact styling*/
+/*features styles*/
+/* line 131, ../scss/_home.scss */
+.featuresButton {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold !important;
+  padding: 10px !important;
+  background-color: transparent !important;
+  color: #222 !important;
+  border: solid 2px #333 !important;
+}
+
+/* line 141, ../scss/_home.scss */
+.featuresButton:hover {
+  color: #222;
+  border-color: #444 !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/*end features styles*/
+/* line 150, ../scss/_home.scss */
+.mainContainer {
+  margin: 0 15px 0 15px;
+  box-shadow: 0px 0px 20px #ccc;
+  border-top: solid 5px #4fd164;
+}
+
+/* line 156, ../scss/_home.scss */
+a {
+  color: #222 !important;
+}
+
+/* line 160, ../scss/_home.scss */
+a:hover {
+  color: #3B9D4B !important;
+  text-decoration: none;
+}
+
+/* line 165, ../scss/_home.scss */
+.green {
+  background-color: #4fd164 !important;
+}
+
+/*video css*/
+/* line 171, ../scss/_home.scss */
+video {
+  width: 100%;
+  z-index: -100;
+  position: absolute;
+  top: 0;
 }
 
 /* line 1, ../scss/_util.scss */
-p {
-  line-height: 19px !important;
-  font-size: 15px !important;
-}
-
-/* line 6, ../scss/_util.scss */
-.row {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-/* line 11, ../scss/_util.scss */
 .smallTitle {
   text-transform: uppercase;
   font-size: 16px;
@@ -205,30 +216,30 @@ p {
   letter-spacing: .05em;
 }
 
-/* line 18, ../scss/_util.scss */
+/* line 8, ../scss/_util.scss */
 .smallDescription {
   font-size: 21px;
   width: 840px;
   margin: 0 auto;
 }
 
-/* line 24, ../scss/_util.scss */
+/* line 14, ../scss/_util.scss */
 .narrow {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 29, ../scss/_util.scss */
+/* line 19, ../scss/_util.scss */
 .center {
   text-align: center;
 }
 
-/* line 33, ../scss/_util.scss */
+/* line 23, ../scss/_util.scss */
 .white {
   color: white !important;
 }
 
-/* line 36, ../scss/_util.scss */
+/* line 26, ../scss/_util.scss */
 .noPadding {
   padding-right: 0px !important;
   padding-left: 0px !important;
@@ -395,7 +406,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 100%;
+  max-width: 80%;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -5953,7 +5964,7 @@ ul.pagination li {
   /* line 167, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal, dialog {
     width: 80%;
-    max-width: 100%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5981,7 +5992,7 @@ ul.pagination li {
   /* line 182, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.tiny, dialog.tiny {
     width: 30%;
-    max-width: 100%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5991,7 +6002,7 @@ ul.pagination li {
   /* line 183, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.small, dialog.small {
     width: 40%;
-    max-width: 100%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -6001,7 +6012,7 @@ ul.pagination li {
   /* line 184, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.medium, dialog.medium {
     width: 60%;
-    max-width: 100%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -6011,7 +6022,7 @@ ul.pagination li {
   /* line 185, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.large, dialog.large {
     width: 70%;
-    max-width: 100%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -6021,7 +6032,7 @@ ul.pagination li {
   /* line 186, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
-    max-width: 100%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -6041,7 +6052,7 @@ ul.pagination li {
   /* line 187, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.full, dialog.full {
     width: 100vw;
-    max-width: 100%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -7321,7 +7332,7 @@ meta.foundation-mq-topbar {
 
   /* line 469, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     margin-bottom: 0;
   }

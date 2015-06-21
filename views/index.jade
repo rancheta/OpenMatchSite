@@ -1,5 +1,54 @@
-extends layout
+include ./head.jade
 
-block content
-  h1= title
-  p Welcome to #{title}
+body
+  .mainContainer
+
+    // HEADER
+
+    include ./header.jade
+
+    // TOP IMAGE
+
+    .div(style='background-image:url("https://download.unsplash.com/photo-1425141750113-187b6a13e28c");background-size:cover;height:463px')
+        .row
+          .large-5.end.columns(style='padding-top:100px')
+            br
+            h2(style='color:white; font-family:cursive') Cheap af
+            p(style='color:white')
+              | Free ridematch software for your business, organization, or foundation for your own ridematch systems.
+            .row(style="padding:0px 0px 0 0")
+              .medium-6.columns
+                a(href='/docs/getting-started')
+                  button.green.button.getstarted Get started
+              .medium-6.columns
+                a(href='http://demo.openmatch.info')
+                  button.green.button.getstarted See Demo
+  
+    // BENEFITS
+    .row(style='padding-top:50px')
+      .large-4.columns
+        h3
+          i.fa.fa-car
+          |  Completely Free
+        p
+          | Free ridematch software for your business or organization, or a foundation for your own ridematch systems.
+        a(href='/docs') 
+          u(style="color:#008415 !important; font-weight:bold") >> See how to set up OpenMatch
+      .large-4.columns
+        h3
+          i.fa.fa-github
+          |  Open Source
+        p
+          | Maintained by a community of developers and continually welcoming improvements. Just fork and go.
+        a(href='#') 
+          u(style="color:#008415 !important; font-weight:bold") >> View the project on GitHub
+      .large-4.columns
+        h3
+          i.fa.fa-check-square-o
+          |  Enterprise Support
+        p
+          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+        a(href='/enterprise') 
+          u(style="color:#008415 !important; font-weight:bold") >>  View pricing plans
+
+    include ./footer.jade

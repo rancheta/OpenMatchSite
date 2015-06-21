@@ -1,0 +1,62 @@
+include ./head.jade
+
+body
+  .mainContainer
+    // HEADER
+
+    include ./header.jade
+    
+    .center(style="height:400px; \
+    background-image:url('https://download.unsplash.com/photo-1428908728789-d2de25dbd4e2'); \
+    background-size: cover;\
+    margin-top:-3px;\
+    padding-top:70px;\
+    margin-bottom:30px")
+      .large-6.large-offset-3.end.columns
+        h1 Enterprise
+        p
+          | Below are some of the features of the current OpenMatch software. as we start to leave alpha many of the items labeled as to do will be integrated into the system
+      .large-8.large-offset-2.end.columns
+        .large-4.columns
+          button.button.featuresButton user customizable routes
+        .large-4.columns
+          button.button.featuresButton smart alert system
+        .large-4.columns
+          button.button.featuresButton realtime chat
+        .large-4.columns
+          button.button.featuresButton facebook verifcation
+        .large-4.columns
+          button.button.featuresButton detailed network maps
+        .large-4.columns
+          button.button.featuresButton embeddable interfaces
+    .row
+      .large-4.columns
+        h4 Easily integrable
+        p
+          | OpenMatch can easily import another database using a simple CSV dump of your current system.
+      .large-4.columns
+        h4 Contribute to a larger network
+        p
+          | While not necessary, OpenMatch instances can easily feed to the 
+          a(href='http://www.toeverywhere.net') toEverywhere
+          |  aggregator, and have the capability to also pull data from it. This way you contribute to a large network of rides that benefit the TDM community as a whole.
+      .large-4.columns
+        h4 Personally Identifiable Information Compliant
+        p
+          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+    .row
+      .large-4.columns
+        h4 Easily integrable
+        p
+          | OpenMatch can easily import another database using a simple CSV dump of your current system.
+      .large-4.columns
+        h4 Contribute to a larger network
+        p
+          | While not necessary, OpenMatch instances can easily feed to the 
+          a(href='http://www.toeverywhere.net') toEverywhere
+          |  aggregator, and have the capability to also pull data from it. This way you contribute to a large network of rides that benefit the TDM community as a whole.
+      .large-4.columns
+        h4 Personally Identifiable Information Compliant
+        p
+          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+    include ./footer.jade

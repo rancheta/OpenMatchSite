@@ -1,0 +1,38 @@
+include ./head.jade
+
+body
+.mainContainer
+
+    include ./header.jade
+
+    .row(style="padding-top:20px")
+      .large-12.column.center
+        h2 Contact Information
+        hr
+        br
+    .row
+      .large-4.columns.center
+        img.circlePicture(src='images/wyatt.jpg')
+        h4 Wyatt Green
+        p.subText.noMargin
+          | CMO - Marketing, Webmaster, Advertising 
+          br
+          a(href='mailto:wyatt@toeverywhere.net') wyatt@toeverywhere.net
+      .large-4.columns.center
+        img.circlePicture(src='images/rafael.jpg')
+        h4 Rafael Ancheta
+        p.subText
+          | CEO - developer, partnerships, designer  
+          br
+          a(href='mailto:rafael@toeverywhere.net') rafael@toeverywhere.net
+          br
+          |               805 405 3111
+      .large-4.columns.center
+        img.circlePicture(src='images/lawrence.jpg')
+        h4 Lawrence Vo
+        p.subText
+          | CFO - finance, biz dev, partnerships  
+          br
+          a(href='mailto:lawrence@toeverywhere.net') lawrence@toeverywhere.net
+
+    include ./footer.jade

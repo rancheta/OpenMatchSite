@@ -1,0 +1,72 @@
+include ./head.jade
+
+body
+  .mainContainer
+    // HEADER
+
+    include ./header.jade
+
+    // END HEADER
+
+    .center(style="height:400px; \
+    background-image:url('https://download.unsplash.com/photo-1428908728789-d2de25dbd4e2'); \
+    background-size: cover;\
+    margin-top:-3px;\
+    padding-top:70px;\
+    margin-bottom:30px")
+      .large-6.large-offset-3.end.columns
+        h1 Features
+        p Below are some of OpenMatch's current features.
+        p We're still in alpha—new features coming soon!
+      .large-8.large-offset-2.end.columns
+        .large-4.columns
+          button.button.featuresButton user customizable routes
+        .large-4.columns
+          button.button.featuresButton smart alert system
+        .large-4.columns
+          button.button.featuresButton realtime chat
+        .large-4.columns
+          button.button.featuresButton facebook verifcation
+        .large-4.columns
+          button.button.featuresButton detailed network maps
+        .large-4.columns
+          button.button.featuresButton embeddable interfaces
+    .row
+      .large-4.large-offset-1.columns(style='padding-top:50px')
+        h4 Userbased Ridematching
+        p
+          | Let your users create an area around their route where they are willing to pick up passengers.
+      .large-6.end.columns
+        img(src='images/homescreen.png', style='height:350px')
+    hr
+    .row
+      .large-4.columns
+        h4 Build in safety features
+        p
+          | OpenMatch can easily import another database using a simple CSV dump of your current system.
+      .large-4.columns
+        h4 Easy to install and implement
+        p
+          | While not necessary, OpenMatch instances can easily feed to the 
+          a(href='http://www.toeverywhere.net') toEverywhere
+          |  aggregator, and have the capability to also pull data from it. This way you contribute to a large network of rides that benefit the TDM community as a whole.
+      .large-4.columns
+        h4 Completely customizable
+        p
+          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+    hr
+    .row
+      .large-10.large-offset-1.columns
+        h2.center Embed Friendly Interfaces
+        //- iframe(style='width:100%; height:400px', src='http://toeverywhere.net/partner/511%20Rideshare')
+      .large-10.large-offset-1.columns
+        p
+          | OpenMatch can easily import another database using a simple CSV dump of your current system.
+    hr
+    .row
+      .large-5.columns(style='padding-top:50px')
+        h4 Mobile friendly design
+        p Works on mobile, table, and desktop 
+      .large-7.columns
+        img(src='images/flat.png', style='height:350px')
+    include ./footer.jade

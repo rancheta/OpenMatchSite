@@ -9,13 +9,26 @@ body
 
     // TOP IMAGE
 
-    .div(style='background-image:url("https://download.unsplash.com/photo-1425141750113-187b6a13e28c");background-size:cover;border-bottom:solid 1px #ccc')
-        .row
-          .large-5.end.columns(style='padding:50px 0 50px 0')
+    //- .div(style='background-image:url("https://download.unsplash.com/photo-1425141750113-187b6a13e28c");background-size:cover;border-bottom:solid 1px #ccc')
+    .div(style='border-bottom:solid 1px #ccc')
+        .row(style='padding:50px 0 50px 0')
+          .large-7.columns(style="padding-top:20px")
+            ul.example-orbit(data-orbit='' data-options="timer_speed:7000;" )
+              li
+                img(src='/images/aggregator3.png', alt='slide 1')
+              li.active
+                img(src='/images/aggregator2.png', alt='slide 2')
+              li
+                img(src='/images/driver_screen.png', alt='slide 4')
+
+          .large-5.columns
             br
-            h2(style='font-family:cursive; color:white') Better Cheaper Carpooling
-            p(style="color:white")
-              | A fully featured ridematching programs for metropolitan planning organizations, businesses, and other organizations.
+            h2(style='color:#333;font-weight:bold') 
+              | A Free Opensource 
+              br 
+              | Carpooling Application
+            p(style="color:#333")
+              | A fully featured open source ridematching application to serve as a base for your next ridematching service.
             .row(style="padding:0px 0px 0 0")
               .medium-6.columns
                 a(href='/docs/getting-started')
@@ -23,6 +36,7 @@ body
               .medium-6.columns
                 a(href='http://demo.openmatch.info')
                   button.green.button.getstarted See Demo
+
 
     // BENEFITS
     .row(style='padding-top:50px')
@@ -47,7 +61,7 @@ body
           i.fa.fa-check-square-o
           |  Enterprise Support
         p
-          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or traditional ridematch service.
         a(href='/enterprise') 
           u(style="color:#008415 !important; font-weight:bold") >>  View pricing plans
 

@@ -59,7 +59,7 @@
 
 /*end util stylings*/
 /*footer stylings*/
-/* line 44, ../scss/_home.scss */
+/* line 48, ../scss/_home.scss */
 footer {
   padding: 20px 5px;
   background-color: #efefef;
@@ -68,29 +68,29 @@ footer {
   margin-top: 60px;
 }
 
-/* line 52, ../scss/_home.scss */
+/* line 56, ../scss/_home.scss */
 footer h5 {
   font-size: 16px;
   margin-bottom: 7px;
   font-weight: bold;
 }
 
-/* line 57, ../scss/_home.scss */
+/* line 61, ../scss/_home.scss */
 footer a {
   color: #444;
 }
 
-/* line 60, ../scss/_home.scss */
+/* line 64, ../scss/_home.scss */
 footer a:hover {
   color: green;
 }
 
-/* line 64, ../scss/_home.scss */
+/* line 68, ../scss/_home.scss */
 ul {
   list-style: none;
 }
 
-/* line 68, ../scss/_home.scss */
+/* line 72, ../scss/_home.scss */
 ul li {
   padding-right: 10px;
   font-size: 14px;
@@ -98,17 +98,21 @@ ul li {
 
 /*end footer stylings*/
 /*header stylings*/
-/* line 75, ../scss/_home.scss */
+/* line 79, ../scss/_home.scss */
 header {
   /*margin-bottom:15px;*/
 }
 
-/* line 80, ../scss/_home.scss */
+/* line 83, ../scss/_home.scss */
+.topNav {
+  padding: 6px 5px 5px 5px;
+}
+/* line 85, ../scss/_home.scss */
 .topNav a {
   margin-bottom: 0px;
 }
 
-/* line 85, ../scss/_home.scss */
+/* line 90, ../scss/_home.scss */
 .topNav .button {
   padding: 10px;
   font-size: 18px;
@@ -117,37 +121,39 @@ header {
   font-variant: small-caps;
 }
 
-/* line 93, ../scss/_home.scss */
+/* line 98, ../scss/_home.scss */
+.logoClass {
+  padding-top: 2px;
+}
+
+/* line 102, ../scss/_home.scss */
 .logoClass a {
   color: #4fd164 !important;
   font-family: 'Titillium Web', sans-serif;
 }
 
-/* line 98, ../scss/_home.scss */
+/* line 107, ../scss/_home.scss */
 .logoClass a:hover {
   color: #4fd164 !important;
 }
 
 /*end header stylings*/
 /*benefits stylings*/
-/* line 106, ../scss/_home.scss */
+/* line 115, ../scss/_home.scss */
 .benefits-heading {
   text-align: center;
 }
 
-/* line 110, ../scss/_home.scss */
+/* line 119, ../scss/_home.scss */
 .benefitsRow i {
   font-size: 5em;
-}
-
-/* line 113, ../scss/_home.scss */
-.benefitsRow {
-  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*end benefits stylings*/
 /*contact stylings*/
-/* line 122, ../scss/_home.scss */
+/* line 130, ../scss/_home.scss */
 .circlePicture {
   height: 200px;
   overflow: hidden;
@@ -157,7 +163,7 @@ header {
 
 /*end contact styling*/
 /*features styles*/
-/* line 133, ../scss/_home.scss */
+/* line 141, ../scss/_home.scss */
 .featuresButton {
   width: 100%;
   font-size: 14px;
@@ -168,7 +174,7 @@ header {
   border: solid 2px #333 !important;
 }
 
-/* line 143, ../scss/_home.scss */
+/* line 151, ../scss/_home.scss */
 .featuresButton:hover {
   color: #222;
   border-color: #444 !important;
@@ -176,31 +182,31 @@ header {
 }
 
 /*end features styles*/
-/* line 152, ../scss/_home.scss */
+/* line 160, ../scss/_home.scss */
 .mainContainer {
   margin: 0 15px 0 15px;
   box-shadow: 0px 0px 20px #ccc;
   border-top: solid 5px #4fd164;
 }
 
-/* line 158, ../scss/_home.scss */
+/* line 166, ../scss/_home.scss */
 a {
   color: #222 !important;
 }
 
-/* line 162, ../scss/_home.scss */
+/* line 170, ../scss/_home.scss */
 a:hover {
   color: #3B9D4B !important;
   text-decoration: none;
 }
 
-/* line 167, ../scss/_home.scss */
+/* line 175, ../scss/_home.scss */
 .green {
   background-color: #4fd164 !important;
 }
 
 /*video css*/
-/* line 173, ../scss/_home.scss */
+/* line 181, ../scss/_home.scss */
 video {
   width: 100%;
   z-index: -100;

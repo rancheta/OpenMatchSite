@@ -17,7 +17,6 @@ body
       .large-6.large-offset-3.end.columns
         h1 Features
         p Below are some of OpenMatch's current features.
-        p We're still in alpha—new features coming soon!
       .large-8.large-offset-2.end.columns
         .large-4.columns
           button.button.featuresButton user customizable routes
@@ -35,33 +34,35 @@ body
       .large-4.large-offset-1.columns(style='padding-top:50px')
         h4 Userbased Ridematching
         p
-          | Let your users create an area around their route where they are willing to pick up passengers.
+          | Let your users create an area around their route where they are willing to pick up passengers. 
+          | Passengers can see all of the rides passing by them.
       .large-6.end.columns
-        img(src='images/homescreen.png', style='height:350px')
+        img(src='images/homescreen.png', style='height:350px; box-shadow:0 0 10px #ccc;')
     hr
-    .row
+    .row.benefitsRow
       .large-4.columns
+        i.fa.fa-life-saver
         h4 Build in safety features
         p
-          | OpenMatch can easily import another database using a simple CSV dump of your current system.
+          | Inbuilt Facebook verification and feedback system to help the user community regulate itself.
       .large-4.columns
-        h4 Easy to install and implement
+        i.fa.fa-comments-o
+        h4 Realtime chat
         p
-          | While not necessary, OpenMatch instances can easily feed to the 
-          a(href='http://www.toeverywhere.net') toEverywhere
-          |  aggregator, and have the capability to also pull data from it. This way you contribute to a large network of rides that benefit the TDM community as a whole.
+          | Let users chat with each other in real time, along with phone details and email notices
       .large-4.columns
-        h4 Completely customizable
+        i.fa.fa-bell-o
+        h4 Alert driven matching
         p
-          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+          | Users requesting rides automatically get notified via email when drivers create rides and vis versa
     hr
     .row
-      .large-10.large-offset-1.columns
+      .large-12.columns
         h2.center Embed Friendly Interfaces
-        //- iframe(style='width:100%; height:400px', src='http://toeverywhere.net/partner/511%20Rideshare')
-      .large-10.large-offset-1.columns
+        iframe(style='width:100%; height:400px', src='http://toeverywhere.net/partner/511%20Rideshare')
+      .large-12.columns.center
         p
-          | OpenMatch can easily import another database using a simple CSV dump of your current system.
+          | OpenMatch can easily be embedded using toEverywhere interfaces.
     hr
     .row
       .large-5.columns(style='padding-top:50px')

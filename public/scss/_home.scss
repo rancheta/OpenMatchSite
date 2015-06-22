@@ -38,6 +38,10 @@
 	}
 }
 
+.orbit-prev, .orbit-next{
+	// top:20% !important;
+}
+
 /*end util stylings*/
 
 /*footer stylings*/
@@ -77,6 +81,7 @@ header{
 }
 
 .topNav{
+	padding:6px 5px 5px 5px;
 	a{
 		margin-bottom:0px
 	}
@@ -88,6 +93,10 @@ header{
 	background-color: transparent!important;
 	font-weight:bold;
 	font-variant: small-caps;
+}
+
+.logoClass{
+	padding-top:2px;
 }
 
 .logoClass a{
@@ -109,9 +118,8 @@ header{
 
 .benefitsRow i {
 	font-size:5em;
-}
-.benefitsRow{
-	text-align: center;
+	padding-top:5px;
+	padding-bottom:5px;
 }
 
 

@@ -97,15 +97,16 @@ header{
 
 .logoClass{
 	padding-top:2px;
-}
-
-.logoClass a{
-	color: #4fd164 !important;
-	font-family: 'Titillium Web', sans-serif;
-}
-
-.logoClass a:hover{
-	color: #4fd164 !important;
+	p{
+		line-height:0;
+	}	
+  	a{
+		color: #4fd164 !important;
+		font-family: 'Titillium Web', sans-serif;
+		&:hover{
+			color: #4fd164 !important;
+		}
+	}
 }
 
 /*end header stylings*/

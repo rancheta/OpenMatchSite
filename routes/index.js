@@ -24,8 +24,8 @@ router.get('/docs', function(req, res) {
 router.get('/docs/getting-started', function(req, res) {
   res.render('./docs/getting-started');
 });
-router.get('/docs/configs', function(req, res) {
-  res.render('docs/configs');
+router.get('/docs/use-cases', function(req, res) {
+  res.render('docs/use-cases');
 });
 router.get('/docs/dependencies', function(req, res) {
   res.render('docs/dependencies');
@@ -38,6 +38,9 @@ router.get('/docs/file-hierarchy', function(req, res) {
 });
 router.get('/docs/tests', function(req, res) {
   res.render('docs/tests');
+});
+router.get('/terms-and-conditions', function(req, res) {
+  res.render('terms-and-conditions');
 });
 
 module.exports = router;

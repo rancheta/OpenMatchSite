@@ -8,18 +8,28 @@ body
     .row
       br
       .large-10.columns
-        h1(style='text-decoration:underline') Getting Started
+        h1(style='text-decoration:underline') Features in Development
       .large-2.columns
-        p(style='padding-top:20px') unstable - v 0.0.0
+        include ./version.jade
     .row
       .large-6.columns
         p
-          | Welcome to the docs for setting up OpenMatch! If you're a software developer, someone looking to contribute to OpenMatch, or just someone looking to play around with some ridematch software, you're in the right place. Please keep in mind that the repository is in alpha—hack around with it in your development environment, but make sure you know what you're doing if you want to use it in production now.
+          | Current items on the to do list for OpenMatch
+        ul(style="list-style:inherit")
+          li full test coverage
+          li OS agnostic shell scripts
+          li Dockerizing
+          li Karma Jasmine Angularjs testing
+          li field checking and type checking in tests
+          li switch over to angular google maps
+          li optimize retrival of rides in OpenMatch
+          li implement toEverywhere style lazy loading in OpenMatch
+          li plugin system
+          li sms messaging 
+          li configuration system
+          li admin panel and analytics
+          li reporting and marketing tools
+          li ... and more
     hr
-    .row
-      .small-12.columns
-        p.subText
-          | Think the docs are lacking? We do too—we've only begun work on them. Feel free to 
-          a(href='mailto:rafael@toeverywhere.net') email us
-          |  if you need more info.
+    include ./docs_footer.jade
     include ../footer.jade

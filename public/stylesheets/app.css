@@ -125,26 +125,28 @@ header {
 .logoClass {
   padding-top: 2px;
 }
-
-/* line 102, ../scss/_home.scss */
+/* line 100, ../scss/_home.scss */
+.logoClass p {
+  line-height: 0;
+}
+/* line 103, ../scss/_home.scss */
 .logoClass a {
   color: #4fd164 !important;
   font-family: 'Titillium Web', sans-serif;
 }
-
-/* line 107, ../scss/_home.scss */
+/* line 106, ../scss/_home.scss */
 .logoClass a:hover {
   color: #4fd164 !important;
 }
 
 /*end header stylings*/
 /*benefits stylings*/
-/* line 115, ../scss/_home.scss */
+/* line 116, ../scss/_home.scss */
 .benefits-heading {
   text-align: center;
 }
 
-/* line 119, ../scss/_home.scss */
+/* line 120, ../scss/_home.scss */
 .benefitsRow i {
   font-size: 5em;
   padding-top: 5px;
@@ -153,7 +155,7 @@ header {
 
 /*end benefits stylings*/
 /*contact stylings*/
-/* line 130, ../scss/_home.scss */
+/* line 131, ../scss/_home.scss */
 .circlePicture {
   height: 200px;
   overflow: hidden;
@@ -163,7 +165,7 @@ header {
 
 /*end contact styling*/
 /*features styles*/
-/* line 141, ../scss/_home.scss */
+/* line 142, ../scss/_home.scss */
 .featuresButton {
   width: 100%;
   font-size: 14px;
@@ -174,7 +176,7 @@ header {
   border: solid 2px #333 !important;
 }
 
-/* line 151, ../scss/_home.scss */
+/* line 152, ../scss/_home.scss */
 .featuresButton:hover {
   color: #222;
   border-color: #444 !important;
@@ -182,31 +184,31 @@ header {
 }
 
 /*end features styles*/
-/* line 160, ../scss/_home.scss */
+/* line 161, ../scss/_home.scss */
 .mainContainer {
   margin: 0 15px 0 15px;
   box-shadow: 0px 0px 20px #ccc;
   border-top: solid 5px #4fd164;
 }
 
-/* line 166, ../scss/_home.scss */
+/* line 167, ../scss/_home.scss */
 a {
   color: #222 !important;
 }
 
-/* line 170, ../scss/_home.scss */
+/* line 171, ../scss/_home.scss */
 a:hover {
   color: #3B9D4B !important;
   text-decoration: none;
 }
 
-/* line 175, ../scss/_home.scss */
+/* line 176, ../scss/_home.scss */
 .green {
   background-color: #4fd164 !important;
 }
 
 /*video css*/
-/* line 181, ../scss/_home.scss */
+/* line 182, ../scss/_home.scss */
 video {
   width: 100%;
   z-index: -100;

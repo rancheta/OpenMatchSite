@@ -40,7 +40,7 @@ body
 
     // BENEFITS
     .row(style='padding-top:50px')
-      .large-4.columns
+      .large-4.columns(style="padding-bottom:30px")
         h3
           i.fa.fa-car
           |  Completely Free
@@ -48,7 +48,7 @@ body
           | Free ridematch software for your business or organization, or a foundation for your own ridematch systems.
         a(href='/docs') 
           u(style="color:#008415 !important; font-weight:bold") >> See how to set up OpenMatch
-      .large-4.columns
+      .large-4.columns(style="padding-bottom:30px")
         h3
           i.fa.fa-github
           |  Open Source
@@ -56,7 +56,7 @@ body
           | Maintained by a community of developers and continually welcoming improvements. Just fork and go.
         a(href='#') 
           u(style="color:#008415 !important; font-weight:bold") >> View the project on GitHub
-      .large-4.columns
+      .large-4.columns(style="padding-bottom:30px")
         h3
           i.fa.fa-check-square-o
           |  Enterprise Support
@@ -64,5 +64,11 @@ body
           | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or traditional ridematch service.
         a(href='/enterprise') 
           u(style="color:#008415 !important; font-weight:bold") >>  View pricing plans
+
+    hr
+    .row
+      .large-12.center.columns(style='padding:30px')
+        h4 Want to inquire about a pilot program?
+        p send us an email at rafael@toeverywhere.net or lawrence@toeverywhere.net 
 
     include ./footer.jade

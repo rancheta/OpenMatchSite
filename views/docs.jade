@@ -10,13 +10,23 @@ body
       .large-10.columns
         h1(style='text-decoration:underline') Docs
       .large-2.columns
-        p(style='padding-top:20px') unstable - v 0.0.0
+        include ./docs/version.jade
     .row
       .large-6.columns
         p
-          | Welcome to the docs for setting up OpenMatch! If you're a software developer, someone looking to contribute to OpenMatch, or just someone looking to play around with some ridematch software, you're in the right place.
+          | Welcome to the docs for setting up OpenMatch! If you're a software developer, 
+          | someone looking to contribute to OpenMatch, or just someone looking to play around 
+          | with a ridematch application, you're in the right place.
         p
-          | Please keep in mind that the repository is in alpha—hack around with it in your development environment, but make sure you know what you're doing if you want to use it in production now.
+          | For some background, we started OpenMatch to contribute more useful data back to 
+          | the toEverywhere aggregator. We think that by open souring the software we can 
+          | improve current ridematching platforms and create more more the aggregator to consume.
+          | We hope that by making this data open, available, and sharable we can create enought critical mass
+          | to make carpooling work. And hopefully one day we can 
+        p
+          | Please keep in mind that the repository is in alpha, hack around with it in your
+          | development environment, but make sure you know what you're doing if you want to 
+          | use it in production as is.
     hr
     .row
       .large-4.columns
@@ -24,28 +34,23 @@ body
           a(href='/docs/getting-started') Getting started
         ul.noMargin
           li
-            a(href='/docs/getting-started#use_cases') Use Cases
+            a(href='/docs/getting-started#dependencies') Dependencies
           li
             a(href='/docs/getting-started#installing') Installing
           li
             a(href='/docs/getting-started#production') Running in production
       .large-4.columns
         h5
-          a(href='/docs/dependencies') Dependencies
+          a(href='/docs/use-cases') Use Cases
         h5
           a(href='/docs/file-hierarchy') File hierarchy
-        h5
-          a(href='/docs/configs') Configs
+        //- h5
+        //-   a(href='/docs/configs') Configs
         h5
           a(href='/docs/tests') Tests
       .large-4.columns
         h5
           a(href='/docs/features-in-development') Features in Development
     hr
-    .row
-      .small-12.columns
-        p.subText
-          | Think the docs are lacking? We do too—we've only begun work on them. Please feel free to 
-          a(href='mailto:rafael@toeverywhere.net') email us
-          |  if you need more info about the software.
+    include ./docs/docs_footer.jade
     include ./footer.jade

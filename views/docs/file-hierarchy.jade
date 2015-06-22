@@ -8,18 +8,181 @@ body
     .row
       br
       .large-10.columns
-        h1(style='text-decoration:underline') Getting Started
+        h1(style='text-decoration:underline') File Hierarchy
       .large-2.columns
-        p(style='padding-top:20px') unstable - v 0.0.0
+        include ./version.jade
     .row
       .large-6.columns
         p
-          | Welcome to the docs for setting up OpenMatch! If you're a software developer, someone looking to contribute to OpenMatch, or just someone looking to play around with some ridematch software, you're in the right place. Please keep in mind that the repository is in alpha—hack around with it in your development environment, but make sure you know what you're doing if you want to use it in production now.
+          | OpenMatch is an 
+          a(href="http://expressjs.com/") express.js 
+          | project and shares the same project structure as many express projects.
+          | Below is a explaination of how it works.
+
+        // ROOT DIRETORY STRUCTURE
+        ul 
+          lh
+            b Files in the project root
+          li 
+            u openmatchwebsite.js
+            | - the 'entry point' of the application layer, 
+            | all requests go through this file and its specified middleware and routes.
+          br
+          li 
+            u package.json
+            | - a json file used to store application for npm 
+          br
+          li 
+            u Gruntfile.js
+            | - stores tasks to compile files via uglify and whatever else you want to put in it.
+          br
+          li 
+            u dump.rbb
+            | - redis dump 
+          br
+          li 
+            u db_template
+            | - a PostgresSql dump of a blank database for use in setting up the enviorment
+          br
+          li 
+            u client-test.js
+            | - used by protractor to run client side tests
+          br
+
+        // CLIENT-SPEC STRUCTURE
+        ul 
+          lh
+            b client-spec
+          li 
+            | all files within this directory are used by protractor when running client side tests, uses jasmine syntax
+        // CONFIGS
+        ul 
+          lh
+            b configs
+          li 
+            | main config files for the services, used to setup the development enviorment,
+            | do not use in production. openmatch_nginx_server is a server block for nginx.
+        // DOCKERFILES
+        ul 
+          lh
+            b dockerfiles
+          li 
+            | more on this later, started using docker to manage the enviorment
+        // MODELS
+        ul 
+          lh
+            b models
+          li 
+            | contains modules used around the project, pretty self explanatory, will elaborate on files when stable
+        // NODE_MODULES
+        ul 
+          lh
+            b node_modules
+          li 
+            | contains node_modules listed in package.json
+        // Public
+        ul 
+          lh
+            b public
+          li 
+            | the public directory used for static assets and angular js 
+          ul(style="border-left:solid 1px #ccc; padding:10px 0 0 10px")
+            lh
+              b .sass-cache
+            li 
+              | cache used by compass when compiling stylesheets out of sass files
+            lh
+              b controllers
+            li 
+              | angulars.js controllers
+            lh
+              b core
+            li 
+              | compiled js files
+            lh
+              b factories
+            li 
+              | factories used by angular js
+            lh
+              b filters
+            li 
+              | angularjs filters
+            lh
+              b fonts
+            li 
+              | fonts
+            lh
+              b images
+            li 
+              | image directory, gets uploaded on git commit don't put large files in
+            lh
+              b javascripts
+            li 
+              | external javascript vendor libraries
+            lh
+              b partials
+            li 
+              | html templates for angularjs
+            lh
+              b scss
+            li 
+              | sass files, use compass to compile then into stylesheets. Control via config.rb in the directory
+            lh
+              b stylesheets
+            li 
+              | compiled stylesheets
+            br 
+            li 
+              u config.js
+              | - angular initialization and config
+            br
+            li 
+              u favicon.ico
+              | - replace with favicon of your choosing
+            br
+            li 
+              u index.html
+              | - file to load angular and start it up
+            br
+            li 
+              u robots.txt
+              | - tells google not to scrap certain pages
+            br
+            li 
+              u routes.js
+              | - routing for angular application
+            br
+        // ROUTES
+        ul 
+          lh
+            b routes
+          li 
+            | routing for the project specified in openmatch.js
+        // SHELL_SCRIPTS
+        ul 
+          lh
+            b shell_scripts
+          li 
+            | shell scripts to setup the enviorment and other routing activies like restoring an old database snapshot
+        // SPEC
+        ul 
+          lh
+            b spec
+          li 
+            | jasmine-node tests
+        // SQLFUNCTIONS
+        ul 
+          lh
+            b sqlFunctions
+          li 
+            | mostly miscelaneous and depreciated
+        // WORLD GEO JSON
+        ul 
+          lh
+            b world_geo_json
+          li 
+            | geo json files used to find intersections in the /region endpoint
+
     hr
-    .row
-      .small-12.columns
-        p.subText
-          | Think the docs are lacking? We do too—we've only begun work on them. Feel free to 
-          a(href='mailto:rafael@toeverywhere.net') email us
-          |  if you need more info.
+    include ./docs_footer.jade
     include ../footer.jade

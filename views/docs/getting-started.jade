@@ -10,16 +10,76 @@ body
       .large-10.columns
         h1(style='text-decoration:underline') Getting Started
       .large-2.columns
-        p(style='padding-top:20px') unstable - v 0.0.0
+        include ./version.jade
     .row
       .large-6.columns
         p
-          | Welcome to the docs for setting up OpenMatch! If you're a software developer, someone looking to contribute to OpenMatch, or just someone looking to play around with some ridematch software, you're in the right place. Please keep in mind that the repository is in alpha—hack around with it in your development environment, but make sure you know what you're doing if you want to use it in production now.
+          | The version of OpenMatch open via github is meant to be used in a development enviorment. 
+          | This section will walk you through getting setup to start hacking.
+
     hr
+      
+    .row(id="#dependencies")
+      br
+      .large-10.columns
+        h4(style='text-decoration:underline') Dependencies
     .row
-      .small-12.columns
-        p.subText
-          | Think the docs are lacking? We do too—we've only begun work on them. Feel free to 
-          a(href='mailto:rafael@toeverywhere.net') email us
-          |  if you need more info.
+      .large-6.columns
+        p
+          | Open match is a web stack with Node.js as an application layer, 
+          | Postgres/PostGIS as a database, Redis for auth/session storage,
+          | and Nginx as a reverse proxy to Node.js (recommended but not needed).
+      .large-3.columns
+        ul(style="list-style:inherit; font-size:14px !important")
+          li Node.js v0.10.36 - runtime enviorment
+          li NPM - node package manager
+          li n - version manager for node.js
+          li Postfix - mail server
+          li Redis - in memory store
+          li Jasmine-node - testing framework (recommended)
+      .large-3.columns
+        ul(style="list-style:inherit; font-size:14px !important")
+          li Protractor - front end e2e testing framework
+          li Nginx - reverse proxy (recommended)
+          li PostgreSQL - Database 
+          li PostGIS - Geospatial extension 
+          li Grunt - task runner (recommended) 
+          li more in node modules in package.json
+
+    hr
+
+    .row(id='#installing')
+      br
+      .large-10.columns
+        h4(style='text-decoration:underline') Setting up the enviorment
+    .row
+      .large-6.columns
+        p
+          | If you're running an Ubuntu/Debian (We use Ubuntu 14.04) distributiuon of Linux you can use
+          | the shell scripts in the shell_scripts directory, and it'll setup the enviorment for you.
+          | We're working on pulling directly from source but for now its dependent on apt-get, if your on another distribution 
+          | lookup how to install the above dependencies. 
+      .large-3.large-offset-1.end.columns
+        ul(style="list-style:inherit; font-size:14px !important")
+          li from project root cd shell_scripts/
+          li ./setup_enviorment
+          li ./load_blank_db
+
+    hr
+
+    .row(id='#production')
+      br
+      .large-10.columns
+        h4(style='text-decoration:underline') Notes on production
+    .row
+      .large-6.columns
+        p
+          | If you're interested in running in production, look more into the tests section,
+          | preferably seperate the services onto seperate servers depending on your expected traffic,
+          | alter the services config files for optimal security,
+          | and setup TLS to protect login information.
+
+    hr
+
+    include ./docs_footer.jade
     include ../footer.jade

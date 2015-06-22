@@ -8,18 +8,39 @@ body
     .row
       br
       .large-10.columns
-        h1(style='text-decoration:underline') Getting Started
+        h1(style='text-decoration:underline') Tests
       .large-2.columns
-        p(style='padding-top:20px') unstable - v 0.0.0
+        include ./version.jade
     .row
       .large-6.columns
         p
-          | Welcome to the docs for setting up OpenMatch! If you're a software developer, someone looking to contribute to OpenMatch, or just someone looking to play around with some ridematch software, you're in the right place. Please keep in mind that the repository is in alpha—hack around with it in your development environment, but make sure you know what you're doing if you want to use it in production now.
+          | Tests for OpenMatch are held in two folders spec/ and client-spec/.
+        
+        p
+          | Server side tests can be run by installing jasmine-node
+          br
+          b npm install -g jasmine-node
+          br
+          | and running 
+          br 
+          b jasmine-node spec/
+        
+        br
+        
+        p
+          | Client-side e2e tests can be run with protractor
+          br 
+          b npm install protractor
+          br
+          | and running 
+          br
+          b webdriver-manager update
+          b webdriver-manager start
+          b protractor ./client-test
+          br
+          br
+          | protractor can be configured in client-test.js and test can be written and altered in client-spec/
+
     hr
-    .row
-      .small-12.columns
-        p.subText
-          | Think the docs are lacking? We do too—we've only begun work on them. Feel free to 
-          a(href='mailto:rafael@toeverywhere.net') email us
-          |  if you need more info.
+    include ./docs_footer.jade
     include ../footer.jade

@@ -2,61 +2,46 @@ include ./head.jade
 
 body
   .mainContainer
-    // HEADER
 
     include ./header.jade
     
-    .center(style="height:400px; \
-    background-image:url('https://download.unsplash.com/photo-1428908728789-d2de25dbd4e2'); \
+    .clearfix.center(style="background-image:url('https://download.unsplash.com/photo-1428953773181-b4cf23cd7195'); \
+    background-position : center; \
     background-size: cover;\
     margin-top:-3px;\
-    padding-top:70px;\
+    padding:150px 0 150px 0;\
     margin-bottom:30px")
       .large-6.large-offset-3.end.columns
-        h1 Enterprise
-        p
-          | Below are some of the features of the current OpenMatch software. as we start to leave alpha many of the items labeled as to do will be integrated into the system
-      .large-8.large-offset-2.end.columns
-        .large-4.columns
-          button.button.featuresButton user customizable routes
-        .large-4.columns
-          button.button.featuresButton smart alert system
-        .large-4.columns
-          button.button.featuresButton realtime chat
-        .large-4.columns
-          button.button.featuresButton facebook verifcation
-        .large-4.columns
-          button.button.featuresButton detailed network maps
-        .large-4.columns
-          button.button.featuresButton embeddable interfaces
+        h1
+          span(style="background-color:rgba(255,255,255,0.8);padding:10px 10px 0 10px") Enterprise Service
+        p(style="background-color:rgba(255,255,255,0.8);padding:10px 10px 10px 10px")
+          | toEveywhere offers enterprise level service for organizations that need
+          | instances of ridematching software setup, maintained, and customized. 
+          | Modules developed in enterprise mode also get pushed out to the public.
     .row
-      .large-4.columns
-        h4 Easily integrable
+      .large-5.large-offset-1.columns
+        h3(style="text-decoration:underline") Pilot Program
         p
-          | OpenMatch can easily import another database using a simple CSV dump of your current system.
-      .large-4.columns
-        h4 Contribute to a larger network
+          | Try out OpenMatch and enterprise sevice for one month free. We'll setup an instance, migrate your rideshare data,
+          | and work with your team to design it for your purposes. For the first five organizations 
+          | that sign up we will also be developing completely new features and ridematch packages, all of which will be 
+          | release to the public. We look forward to working with you and making software that works for everyone.
+      .large-5.end.columns
+        h4(style="text-decoration:underline") Annual Program
         p
-          | While not necessary, OpenMatch instances can easily feed to the 
-          a(href='http://www.toeverywhere.net') toEverywhere
-          |  aggregator, and have the capability to also pull data from it. This way you contribute to a large network of rides that benefit the TDM community as a whole.
-      .large-4.columns
-        h4 Personally Identifiable Information Compliant
-        p
-          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+          | After your pilot if you decide to continue on with the service we will continue to
+          | maintain your instances, work with your team to keep it up-to-date, and continue
+          | to develop the software with your team. While its still early to declare prices we want to 
+          | price ourselves from 10-20k, given that your instance feeds into the aggregator 
+          | toEverywhere aggregator and 20-30k for private instances.
+
+    hr
     .row
-      .large-4.columns
-        h4 Easily integrable
-        p
-          | OpenMatch can easily import another database using a simple CSV dump of your current system.
-      .large-4.columns
-        h4 Contribute to a larger network
-        p
-          | While not necessary, OpenMatch instances can easily feed to the 
-          a(href='http://www.toeverywhere.net') toEverywhere
-          |  aggregator, and have the capability to also pull data from it. This way you contribute to a large network of rides that benefit the TDM community as a whole.
-      .large-4.columns
-        h4 Personally Identifiable Information Compliant
-        p
-          | Setup, maintain, and iterate on your ridematch software for a fraction of the price of an inhouse team or other service.
+      .large-12.center.columns(style='padding:100px')
+        h4 Want to inquire about a pilot program?
+        p send us an email at rafael@toeverywhere.net or lawrence@toeverywhere.net 
+        .large-6.columns
+          button.getstarted(style="background-color:#4fd164") view a demo
+        .large-6.columns
+          button.getstarted(style="background-color:#4fd164") view features
     include ./footer.jade

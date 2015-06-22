@@ -1,0 +1,22 @@
+include ../head.jade
+
+body
+  .mainContainer
+  
+    include ../header.jade
+
+    .row
+      br
+      .large-10.columns
+        h1(style='text-decoration:underline') Use Cases
+      .large-2.columns
+        include ./version.jade
+    .row
+      .large-6.columns
+        p
+          | OpenMatch is simply a platform to build off of into whatever you might possibly want. 
+          | While we plan to release specific packages for schoolpool and vanpool services the application is meant
+          | to be a ground for developers to create their own modules and share them with the community.
+    hr
+    include ./docs_footer.jade
+    include ../footer.jade
